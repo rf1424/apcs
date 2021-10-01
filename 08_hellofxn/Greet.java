@@ -1,3 +1,10 @@
+/*
+Rin Fukuoka
+APCS
+HW08 
+*/
+
+
 public class Greet {
 public static void greet(String name) {
 System.out.println("Why, hello there, " + name + " How do you do?");
