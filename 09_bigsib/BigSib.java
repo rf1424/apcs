@@ -1,5 +1,9 @@
 /*
-Rin Fukuoka
+Elmo's Minions: 
+Rin Fukuoka and Tape
+Joshua Yagupsky and Quacker
+Marcus Wu 
+
 APCS
 hw09
 */
