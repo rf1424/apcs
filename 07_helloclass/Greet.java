@@ -2,6 +2,7 @@
 Rin Fukuoka
 APCS
 HW08 
+2021-9-30
 */
 
 public class Greet{
