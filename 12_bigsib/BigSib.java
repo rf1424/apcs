@@ -1,3 +1,4 @@
+
 /*
 Elmo's Minions: 
 Rin Fukuoka and Tape
@@ -8,12 +9,12 @@ hw09
 */
 
 public class BigSib {
-String helloMsg; 
-	public BigSib() {
-
-		}
-public void setHelloMsg(String s) {
-
+	String helloMsg; 
+	public void setHelloMsg(String message) {
+	helloMsg = message;
+	}
+	public String greet(String name) {
+	return helloMsg + " " + name;
 	}
 }
 
