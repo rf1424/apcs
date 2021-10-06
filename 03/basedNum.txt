@@ -14,7 +14,7 @@ Decimal to Binary:
    quotient:remainder
 2. Take the quotient and divide it by 2 again. Write down the new quotient and the remainder in the same "quotient:remainder" form. 
 3. Continue step 1 until the quotient becomes 1. 
-4. Take and align the remainders from left to right, starting with the first remainder. 
+4. Take and align the remainders from left to right, starting with the last remainder. 
 
 Example: 345
 345:1 
@@ -26,4 +26,19 @@ Example: 345
 5:1
 2:0
 1:1
-1001101101
+Binary representation is 101011001. 
+
+
+Binary to Decimal: 
+0. Take a base 2 number y. Take the leftmost digit of y and multiply by 2. 
+1. Take the next(second) leftmost digit of y, add it to the above sum and multiply by 2. 
+2. Repeat step 2 with the respective digit of y. Stop when you get to the last(rightmost digit). 
+3. Add the last(leftmost digit) to the above sum. 
+
+Example: 10111
+10111 → 2(1)=2
+0111 → 2(2+0)=4
+111 → 2(4+1)=10
+11 → 2(10+1)=22
+1 → 22+1=23
+Base 10 representation is 23. 
