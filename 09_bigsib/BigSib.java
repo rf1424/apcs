@@ -6,7 +6,7 @@ hw09
 */
 
 /*
-DISCOVERIES: If you previously made edits on GitHub, then "git pull" on terminal before performing "git pull". 
+DISCOVERIES: If you previously made edits on GitHub, then "git pull" on terminal before performing "git push". 
 UNRESOLVED QUESTIONS: Why do you put the Greet.java code and the BigSib.java code in separate files, rather than in a single file?
 */
 
