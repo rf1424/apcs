@@ -1,11 +1,16 @@
-
 /*
 Elmo's Minions: 
-Rin Fukuoka and Tape
-Joshua Yagupsky and Quacker
-Marcus Wu and Nat 
+Rin Fukuoka (Tape), Joshua Yagupsky (Quacker), Marcus Wu (Nat) 
 APCS
 hw09
+2021-10-05
+*/
+
+/*
+DISC: 
+Richard is the instance of BigSib(?). 
+QCC:
+What does "BigSib richard = new BigSib()" represent in Greet.java?
 */
 
 public class BigSib {
