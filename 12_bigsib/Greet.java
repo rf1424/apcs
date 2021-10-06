@@ -6,6 +6,13 @@ hw09
 2021-10-05
 */
 
+/*
+DISC: 
+Richard is the instance of BigSib(?). 
+
+QCC:
+What does "BigSib richard = new BigSib()" represent in Greet.java?
+
 public class Greet {
   public static void main( String[] args ) {
     String greeting;
