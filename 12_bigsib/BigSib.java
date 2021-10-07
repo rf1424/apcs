@@ -1,12 +1,17 @@
 
 /*
 Elmo's Minions: 
-Rin Fukuoka and Tape
-Joshua Yagupsky and Quacker
-Marcus Wu and Nat 
+Rin Fukuoka (Tape), Joshua Yagupsky (Quacker), Marcus Wu (Nat)
 APCS
 hw09
+2021-10-03
 */
+
+/*
+DISCO:
+
+QCC:
+
 
 public class BigSib {
 	String helloMsg; 

@@ -1,0 +1,7 @@
+Greet.java:18: error: constructor BigSib in class BigSib cannot be applied to given types;
+		BigSib richard = new BigSib("Word up");
+		                 ^
+  required: no arguments
+  found: String
+  reason: actual and formal argument lists differ in length
+1 error
