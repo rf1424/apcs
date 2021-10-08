@@ -19,14 +19,14 @@ In this error, the method sethellomsg cannot be found.
 This is because there is a typo in "setHellomsg".
 It should be "setHelloMsg", which matches the method in class BigSib. 
 QCC: 
-What would a ckass with multiple constructors look like?
+What would a class with multiple constructors look like?
 */
 
 public class Greet {
 	public static void main(String [] args) {
 		String greeting; 
 		
-		BigSib richard = new BigSib("Word Up");
+		BigSib richard = new BigSib();
 		greeting = richard.greet("Freshman");
 		System.out.println(greeting); 
 
