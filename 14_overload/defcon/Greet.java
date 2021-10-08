@@ -1,17 +1,25 @@
 /*
 Neverland: 
-Rin Fukuoka (Tape), Diana Akhmedova(Ajax)
+Rin Fukuoka (Tape), Diana Akhmedova(Ajax), Marcus Wu (Nat)
 APCS
-hw13
-2021-10-06
+hw14 -- Default and Overloaded Constructors
+2021-10-07
 */
 
 /*
 DISC: 
-When the header is static, it can not work with instance variables.
-The instance variables are not within that method. (Help from Piazza@96) 
+Greet.java:37: error: cannot find symbol
+		richard3.setHellomsg("Sup");
+		        ^
+  symbol:   method setHellomsg(String)
+  location: variable richard3 of type BigSib
+1 error
+
+In this error, the method sethellomsg cannot be found.
+This is because there is a typo in "setHellomsg".
+It should be "setHelloMsg", which matches the method in class BigSib. 
 QCC: 
-How do you determine if the method should be public or private?
+What would a ckass with multiple constructors look like?
 */
 
 public class Greet {
@@ -28,11 +36,13 @@ public class Greet {
 		greeting = richard1.greet("Dr. Spaceman");
 		System.out.println(greeting); 
 
-		BigSib richard2 = new BigSib("Hey ya");
+		BigSib richard2 = new BigSib();
+		richard2.setHelloMsg("Hey ya");
 		greeting = richard2.greet("Kong Fooey");
 		System.out.println(greeting);
 
-		BigSib richard3 = new BigSib("Sup");
+		BigSib richard3 = new BigSib();
+		richard3.setHelloMsg("Sup");
 		greeting = richard3.greet("mom");
 		System.out.println(greeting); 
 	}
