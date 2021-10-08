@@ -25,6 +25,11 @@ What would a ckass with multiple constructors look like?
 
 public class BigSib {
 	String helloMsg;
+	
+	public BigSib() {
+		helloMsg = "Word up";
+		} //default
+	
 	public BigSib(String msg) {
 		helloMsg = msg;
 	}
