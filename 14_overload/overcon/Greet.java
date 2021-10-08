@@ -19,7 +19,7 @@ In this error, the method sethellomsg cannot be found.
 This is because there is a typo in "setHellomsg".
 It should be "setHelloMsg", which matches the method in class BigSib. 
 QCC: 
-What would a class with multiple constructors look like?
+Why must the default constructor be listed before the overloaded constructor?
 */
 
 public class Greet {
