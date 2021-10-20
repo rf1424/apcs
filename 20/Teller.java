@@ -1,11 +1,13 @@
 /*Duck Duck Goose - Trio 7 - Gloria Lee, Jonathan Song, Rin Fukuoka
+HW20 -- External Audit(testing and breaking BankAccount)
+2021-10-19
 
 DISCO - We discovered that in order to declare a variable to be of the short data type, we have to manually write 
 (short) in front of the specific short value we are trying to save. We discovered that there were several ways to 
 break the code. For example, we could try to withdraw a negative amount from the balance. We could also set the 
 password to an integer to produce an error message.
 
-QCC: What is meant exactly by breaking the code? 
+QCC - What is meant exactly by breaking the code? 
 
 */
 
