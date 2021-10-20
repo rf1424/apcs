@@ -6,17 +6,17 @@ public class Teller {
     hacker.setName("Goose");
     hacker.setPasswd("whitehat122");
 		hacker.setBalance(20000);
-    
+  
+    //test toString(printing info)  
+    System.out.println( hacker.toString());
+   
     //test acctNum
-    hacker.setAcctNum(123);//expecting invalid
-		hacker.setAcctNum(712234456);//expecting valid
+    System.out.println("test acctNum" + hacker.setAcctNum(123));//expecting invalid
+		System.out.println(hacker.setAcctNum(712234456));//expecting valid
     
     //test PIN
-    hacker.setPin((short) 999)); //expecting invalid
+    hacker.setPin((short) 999); //expecting invalid
     hacker.setPin((short) 1254); //expecting valid: 
-    
-    //test toString(printing info)
-    System.out.println( hacker.toString());
     
     //test deposit 
 		hacker.deposit(500); 
@@ -32,11 +32,10 @@ public class Teller {
     hacker.authenticate(124129481, "getmein"); //expecting false
   
 //break BankAccount
-    //test withdraw
-   
+    //
+    hacker.setPasswd(10082784);
     
   }
 }
 
   
-
