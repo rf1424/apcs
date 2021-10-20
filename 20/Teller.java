@@ -12,7 +12,7 @@ public class Teller {
 		hacker.setAcctNum(712234456);//expecting valid
     
     //test PIN
-    hacker.setPin((short) 999)) //expecting invalid
+    hacker.setPin((short) 999)); //expecting invalid
     hacker.setPin((short) 1254); //expecting valid: 
     
     //test toString(printing info)
