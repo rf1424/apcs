@@ -1,3 +1,13 @@
+/*Duck Duck Goose - Trio 7 - Gloria Lee, Jonathan Song, Rin Fukuoka
+
+DISCO - We discovered that in order to declare a variable to be of the short data type, we have to manually write 
+(short) in front of the specific short value we are trying to save. We discovered that there were several ways to 
+break the code. For example, we could try to withdraw a negative amount from the balance. We could also set the 
+password to an integer to produce an error message.
+
+QCC: What is meant exactly by breaking the code? 
+
+*/
 
 public class Teller {
   public static void main (String [] args) {
@@ -33,20 +43,13 @@ public class Teller {
     hacker.authenticate(124129481, "getmein"); //expecting false
   
 //break BankAccount
-<<<<<<< HEAD
-    //test withdraw
-
-//break BankAccount
     //
-    hacker.setPasswd(10082784);
-       
-=======
-    System.out.println("Breaking code")
+    
     //hacker.setPasswd(10082784);
-    hacker.deposit(20.33456); 
+    hacker.deposit(20.33456);
     hacker.withdraw(-258.12);
- 
->>>>>>> 5c45a256b447f241fdd7aacdf547782ecdb4b751
+    System.out.println(hacker.toString());
+
     
   }
 }
