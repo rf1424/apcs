@@ -14,7 +14,7 @@ public class Stats {
 
   public static int mean(int a, int b) {
     int mean;
-    mean = a/2 + b/2;
+    mean = (a + b)/2;
     return mean;
 
   }

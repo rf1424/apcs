@@ -2,8 +2,7 @@ public class StatsDriver {
 
   public static void main(String[]args){
     System.out.println(Stats.mean(2,4));//expected output 3
-
-    System.out.println(Stats.mean(3.3));//expected output 3
+    System.out.println(Stats.mean(3,3));//expected output 3
     System.out.println(Stats.mean(0,0));//expected output 0
     System.out.println(Stats.mean(-4,4));//expected output 0
     
