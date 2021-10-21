@@ -21,11 +21,13 @@ public class Stats {
    
    
    public static double mean(double a, double b) {
-
+     double mean; 
+     mean = a/2 + b/2;
+     return mean;
   }
-
+/*
   public static int max(int a, int b) {
-
+    
   }
 
   public static double max(double a, double b) {
@@ -55,6 +57,8 @@ public class Stats {
   public static double geoMean(double a, double b, double c) {
 
   }
+*/
+
   //main method for testing functionality
   public static void main( String[] args ) {
   }
