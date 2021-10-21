@@ -1,13 +1,22 @@
 /**
    Duck Duck Goose: Gloria Lee (Flounder), Jonathan Song (Phoenix), Rin Fukuoka (Tape)
    APCS
-   HW20 --
+   HW20 -- Stats.java and its tests
    2021-10-21
    TASK:
    Implement each method without typecasting.
    xtra: harmonic mean is the reciprocal of the
    arithmetic mean of the reciprocals
- **/
+ 
+DISCO: 
+The math class contains specific methods for mathematical operations, including a method to find the cube root. 
+It's possible to change the data types of variables. For example, we were able to change the data type of mean from int to double.
+QCC: 
+What does typecasting mean exactly? 
+Why do we get lossy conversion errors? 
+What should have been returned if there was a negative value to take the square root of? 
+What are some alternates to typecasting to avoid the lossy conversion error?
+**/
 
 
 import java.lang.Math;
