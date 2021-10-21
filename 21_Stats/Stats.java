@@ -25,15 +25,31 @@ public class Stats {
      mean = a/2 + b/2;
      return mean;
   }
-/*
+
+
   public static int max(int a, int b) {
-    
+    int max;
+    if (a >= b) { 
+      max = a;
+      }
+    else {
+      max = b;
+      }
+    return max;      
   }
 
   public static double max(double a, double b) {
-
+    double max;
+    if (a >= b) { 
+      max = a;
+      }
+    else {
+      max = b;
+      }
+    return max;
   }
-
+  
+/*
   public static int geoMean(int a, int b) {
 
   }
