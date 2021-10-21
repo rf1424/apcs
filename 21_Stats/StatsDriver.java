@@ -22,15 +22,15 @@ public class StatsDriver {
     System.out.println(Stats.max(-9.00,-24.000));//expected output -9.00
     System.out.println(Stats.max(0.000,0.00));//expected output 0.000
     
-    Stats.geoMean(4,9);//expected output 6
-    Stats.geoMean(0,0);//expected output 0
-    Stats.geoMean(-9,4);//expected output error
-    Stats.geoMean(-9,-4);//expected output 6
+    System.out.println(Stats.geoMean(4,9));//expected output 6
+    System.out.println(Stats.geoMean(0,0));//expected output 0
+    System.out.println(Stats.geoMean(-9,4));//expected output error
+    System.out.println(Stats.geoMean(-9,-4));//expected output 6
     
-    Stats.geoMean(4.00,9.00);//expected output 6.00
-    Stats.geoMean(0.00,0.00);//expected output 0.00
-    Stats.geoMean(-9.00,4.00);//expected output error
-    Stats.geoMean(-9.00,-4.00);//expected output 6.00
+    System.out.println(Stats.geoMean(4.00,9.00));//expected output 6.00
+    System.out.println(Stats.geoMean(0.00,0.00));//expected output 0.00
+    System.out.println(Stats.geoMean(-9.00,4.00));//expected output error
+    System.out.println(Stats.geoMean(-9.00,-4.00));//expected output 6.00
 */
   }
 
