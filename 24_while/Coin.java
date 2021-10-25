@@ -2,18 +2,12 @@
 Team Jaundice
 Roster:Ethan Lam, Rin Fukuoka
 APCS
-HW23 -- Coin
-2021-10-24
-time spent: 2.3hr
+HW24 -- While Loop
+2021-10-25
+time spent:
 
-DISC:
--You must redeclare an instance variable in an overloaded constructor or else it will be reset to 0,
-even if you declared it in the default constructor.
--You can call an instance variable of a class.
-
-QCC:
-Why do need two overloaded constructors?
-
+DISC
+QCc
 ***/
 
 import java.lang.Math;
@@ -51,12 +45,9 @@ public class Coin {
       postcond:
  ***/
   public Coin( String s ) {
-  	name = s;
-    value = 0;
-    upFace = "null";
-    flipCtr = 0;
-    tailsCtr = 0;
-    bias = 0.5;
+  	this();
+    name = s;
+    assignValue(s);
   }
 
 /***
@@ -66,12 +57,9 @@ public class Coin {
 ***/
 
   public Coin( String s, String nowFace ) {
-  	name = s;
-  	upFace = nowFace;
-    value = 0;
-    flipCtr = 0;
-    tailsCtr = 0;
-    bias = 0.5;
+    this(s);
+    upFace = nowFace;
+
   }
 
 
@@ -140,7 +128,7 @@ public class Coin {
       postcond: Coin's attribs reset to starting vals
  ***/
   public void reset( String s, double d ) {
-    if (s.equals("heads") || s.equals("tails") {
+    if (s.equals("heads") || s.equals("tails")) {
 			if ( d <= 1.0 && d >= 0.0){
         bias = d;
         upFace = s;
@@ -165,7 +153,7 @@ public class Coin {
   public String flip() {
 
     double number = Math.random(); //sets number to a floating point in between 0 and 1
-    if (number <= bias) {
+    if (number < bias) {
       upFace = "heads";
       headsCtr++;
     }
