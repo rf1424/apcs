@@ -1,13 +1,19 @@
 /***
 Team Jaundice
-Roster:Ethan Lam, Rin Fukuoka
+Roster: Ethan Lam(Carl), Rin Fukuoka(Tape)
 APCS
-HW24 -- While Loop
+HW24 -- Coin
 2021-10-25
-time spent:
+time spent: 1.5 hours
 
-DISC
-QCc
+DISC:
+How to use the while loop: while the boolean is true, loop runs.
+Instance of a class can be a parameter.
+QCC:
+Is there a way to write this more concisely/conbine any of the methods with loops?
+POST-v0 MODS:
+Added flipCtr to the flip method.
+Added this() constructor.
 ***/
 
 import java.lang.Math;
