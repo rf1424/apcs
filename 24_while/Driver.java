@@ -2,7 +2,7 @@
 Team Jaundice
 Roster: Ethan Lam(Carl), Rin Fukuoka(Tape)
 APCS
-HW24 -- Coin
+HW24 -- Loop
 2021-10-25
 time spent: 1.5 hours
 
