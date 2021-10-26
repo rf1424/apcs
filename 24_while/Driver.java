@@ -1,19 +1,19 @@
 /***
 Team Jaundice
-Roster:Ethan Lam, Rin Fukuoka
+Roster: Ethan Lam(Carl), Rin Fukuoka(Tape)
 APCS
-HW23 -- Coin
-2021-10-24
-time spent: 2.3hr
+HW24 -- Coin
+2021-10-25
+time spent: 1.5 hours
 
 DISC:
--You must redeclare an instance variable in an overloaded constructor or else it will be reset to 0,
-even if you declared it in the default constructor.
--You can call an instance variable of a class.
-
+How to use the while loop: while the boolean is true, loop runs.
+Instance of a class can be a parameter.
 QCC:
-Why do need two overloaded constructors?
-
+Is there a way to write this more concisely/conbine any of the methods with loops?
+POST-v0 MODS:
+Added flipCtr to the flip method.
+Added this() constructor.
 ***/
 /***
     driver for class Coin
@@ -36,31 +36,73 @@ public class Driver {
 
     //test default constructor
 
-      Coin mine = new Coin();
-      //test 1st overloaded constructor
+      //1st overloaded constructor
       Coin yours = new Coin( "quarter" );
-      //test 2nd overloaded constructor
+      //2nd overloaded constructor
       Coin wayne = new Coin( "dollar", "heads" );
-      //test toString() methods of each Coin
-      System.out.println("mine: " + mine);
-      System.out.println("yours: " + yours);
-      System.out.println("wayne: " + wayne);
-      //test flip() method
-      System.out.println("\nAfter flipping...");
-      yours.flip();
-      wayne.flip();
-      System.out.println("yours: " + yours);
-      System.out.println("wayne: " + wayne);
-      //test equals() method
-      if ( yours.equals(wayne) ) {
-        System.out.println( "Matchee matchee!" );
-      }
-      else {
-        System.out.println( "No match. Firestarter you can not be." );
-      }
-      /*===================TOP==========================
-      ====================BOTTOM======================*/
 
-  }//end main()
+    //running flupUntilHeads
+      flipUntilHeads(yours, wayne, 20);
+      System.out.println("Flip until heads:");
+      System.out.println("yours number of heads: " + yours.getHeadsCtr() + "\nyours number of tails: "
+                         + yours.getTailsCtr() + "\nwayne number of flips: " + yours.getFlipCtr());
+
+      System.out.println("wayne number of heads: " + wayne.getHeadsCtr() + "\nwayne number of tails: "
+                         + wayne.getTailsCtr() + "\nwayne number of flips: " + wayne.getFlipCtr());
+
+
+    //running flipUntilMatches
+    	wayne.reset("heads", 0.5);
+    	yours.reset("heads", 0.5);
+    	flipUntilMatches(yours, wayne, 20);
+      System.out.println("\nFlip Until matches:");
+      System.out.println("yours number of heads: " + yours.getHeadsCtr() + "\nyours number of tails: "
+                         + yours.getTailsCtr() + "\nwayne number of flips: " + yours.getFlipCtr());
+      System.out.println("wayne number of heads: " + wayne.getHeadsCtr() + "\nwayne number of tails: "
+                         + wayne.getTailsCtr() + "\nwayne number of flips: " + wayne.getFlipCtr());
+
+      wayne.reset("heads", 0.5);
+    	yours.reset("heads", 0.5);
+    	flipUntilBM(yours, wayne);
+      System.out.println("\nFlip Until 65536:");
+      System.out.println("yours number of heads: " + yours.getHeadsCtr() + "\nyours number of tails: "
+                         + yours.getTailsCtr() + "\nwayne number of flips: " + yours.getFlipCtr());
+      System.out.println("wayne number of heads: " + wayne.getHeadsCtr() + "\nwayne number of tails: "
+                         + wayne.getTailsCtr() + "\nwayne number of flips: " + wayne.getFlipCtr());
+
+      } //end main()
+
+
+	public static void flipUntilHeads(  Coin c1, Coin c2, int x) {
+
+    while ( c1.getHeadsCtr() + c2.getHeadsCtr() < x) {
+      c1.flip();
+      c2.flip();
+
+    }
+	}
+
+
+  public static void flipUntilMatches( Coin c1, Coin c2, int y) {
+    int matchCtr = 0;
+    while ( matchCtr < y) {
+      c1.flip();
+      c2.flip();
+      if ( c1.equals(c2)) {
+        matchCtr++;
+      }
+    }
+  }
+
+  public static void flipUntilBM( Coin c1, Coin c2) {
+    int matchCtr = 0;
+    while ( matchCtr < 65536 || matchCtr % 2004 != 0) {
+      c1.flip();
+      c2.flip();
+      if ( c1.equals(c2)) {
+        matchCtr++;
+      }
+    }
+  }
 
 }//end class

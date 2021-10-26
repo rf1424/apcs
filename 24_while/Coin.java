@@ -134,6 +134,7 @@ public class Coin {
         upFace = s;
         flipCtr = 0;
         tailsCtr = 0;
+        headsCtr = 0;
       }
     }
     else {
@@ -161,6 +162,7 @@ public class Coin {
       upFace = "tails";
       tailsCtr++;
     }
+      flipCtr++;
       return upFace;
   }
 
