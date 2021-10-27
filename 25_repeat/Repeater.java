@@ -3,6 +3,7 @@
    APCS
    HW25 -- Loops and Recursions
    2021-10-26
+   time spent: 1hr
 
    QCC:
    How should recursion be represented in a flow chart?
