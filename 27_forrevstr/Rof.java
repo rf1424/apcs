@@ -15,6 +15,7 @@ QCC:
  - When we tried to set the value of a String to the charAt() of a String, it yielded the error "incompatible types: char cannot be converted to String".
    When we changed the datatype of the variable to char, the error message dissappeared? Why? What does this mean?
  - On the same vein as the previous question, why were we able to concatenate a char onto a String in line {49}, but not set a String to a char?
+ 
 */
 
 public class Rof {
