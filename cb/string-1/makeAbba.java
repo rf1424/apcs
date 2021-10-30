@@ -5,6 +5,7 @@ public class makeAbba {
   return a + b + b + a;
   }
 
+ //test cases
   public static void main(String [] args) {
     System.out.println( makeAbba("Hi", "Bye"));
     System.out.println( makeAbba("Yo", "Alice"));
