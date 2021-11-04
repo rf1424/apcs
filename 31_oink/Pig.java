@@ -1,18 +1,18 @@
 /***
-		Duck Duck Goose: Gloria Lee (Flounder), Jonathan Song (Phoenix), Rin Fukuoka (Tape)
-		APCS
-		HW31 -- Otnay Ybay ethay Airhay Onway Ymay Inneechay Inchay Inchay
-		2021-11-3
-		time spent: 1 hr
+Duck Duck Goose: Gloria Lee (Flounder), Jonathan Song (Phoenix), Rin Fukuoka (Tape)
+APCS
+HW31 -- Otnay Ybay ethay Airhay Onway Ymay Inneechay Inchay Inchay
+2021-11-3
+time spent: 1 hr
 
-    DISC:
-    -The HW name is "Not By The Hair Of My Chinnee Chin Chin.
-    -A lot of the methods that we created in the beginning of the code
+DISC:
+-The HW name is "Not By The Hair Of My Chinnee Chin Chin.
+-A lot of the methods that we created in the beginning of the code
     could be used later on in later methods.
-    QCC:
-    -Why do you need to return the invocation of hasA inside the method isVowel? Does it not automatically return?
-    -Is there a way to create nested comments?
-    -How do you utilize these methods to make a Pig Lation translator?
+QCC:
+-Why do you need to return the invocation of hasA inside the method isVowel? Does it not automatically return?
+-Is there a way to create nested comments?
+-How do you utilize these methods to make a Pig Lation translator?
  *
  * class Pig
  * a Pig Latin translator
