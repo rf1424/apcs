@@ -137,7 +137,7 @@ public class Pig {
     else if ( beginsWithVowel(w.toLowerCase()) && !(firstLetY(w))) {
       ans = w + "way";
     }
-    //oesn't begin with vowel or y(consonnant)
+    //doesn't begin with vowel or y(consonnant)
     else {
       int vPos = w.indexOf( firstVowel(w) );
       ans = w.substring(vPos) + w.substring(0,vPos) + "ay";
