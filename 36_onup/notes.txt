@@ -1,0 +1,31 @@
+Rin Fukuoka (Tape)
+APCS
+HW--Notes For: Appendix D Debugging
+2021-11-18
+time spent: 1
+
+
+Kind of errors
+1. Compile-time errors: something wrong with syntax
+2. Run-time errors: something wrong while running the program
+3. Logic errors: program does the wrong thing
+
+
+1. Compile-time errors
+- debugging by bijection (halve the code and test)
+- error messages inform that something is wrong,
+  but their solutions are not always reliable
+
+2. Run-time errors
+- "program is hanging"
+- add print statements to find the error
+    -Ex: "System.out.println("enter method x")
+
+3. Logic errors
+- have a mental model/flow chart of your code
+- floating-point numbers are only approximate
+    -Use (Math.abs(d - 1.23) < .000001) for approximation
+
+Additional tips
+- step away from computer and think
+- summon duckie, then another person
