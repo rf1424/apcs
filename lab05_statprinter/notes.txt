@@ -1,0 +1,30 @@
+Team stingRAY
+(Rin Fukuoka/Tape, Abdullah Faruque/Joemama, Yuki Feng/Benjamin and Mister Boba)
+APCS pd8
+L05 -- pulling it together
+2022-02-03
+time spent: 1 hrs
+
+
+DISCO
+------------------------------------------------
+*
+There is a shortcut to using char and String.replace() to fill a String with a character j many times.
+	for (int j = 0; j < _frequency.get(i); j++) {
+		String stars = new String(new char[j]).replace("\0", "*");
+	}
+
+================================================
+
+
+QCC
+------------------------------------------------
+*
+How much time would be given on a lab like this during the AP exam?
+================================================
+
+
+MISC
+------------------------------------------------
+*
+================================================
