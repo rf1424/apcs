@@ -1,0 +1,25 @@
+Team stingRAY: Rin Fukuoka/Tape, Abdullah Faruque/Joemama, Yuki Feng/Benjamin and Mister Boba
+APCS pd 8
+HW60 -- A Termite is-a Turtle, a Thinker is-a Turtle
+Time: 0.5 hrs
+
+
+DISCO
+- Each turtle follows the same set of instructions. ↓
+- I am guessing that there are some recursive steps involved in the process. 
+- It's similar to the termites simulation:
+  - termites start by creating smaller piles and combine these piles into a larger one
+  - we make smaller sorted lists and combine them gradually with each pass back 
+
+
+QCC
+- Why couldn't you look at your deck of cards in class? How do you merge decks without looking? 
+- How efficient is this algorithm? 
+
+
+THINKER FIRMWARE (Instructions each turtle follows)
+- When you recieve a deck, check if there is only one card. 
+   - If there is only one card, hand the card back to the giver. 
+   - Else, split the deck in half and give them each to two new turtles.  
+- When you recieve two decks, perform the merging algorithm for sorted lists. 
+  Once you are done, hand the merged deck to your original/first giver. 
