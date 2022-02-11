@@ -167,19 +167,52 @@ public class Review {
     String reviewFile = textToString(fileName);
     String word = "";
     int startI = 0;
-    int total = 0;
+    double total = 0;
     String lastWord;
     for (int endI = 0; endI < reviewFile.length(); endI++) {
-      if (reviewFile.substring(endI, endI+1) == " ") {
-        word = reviewFile.substring(startI+1, endI);
+      if (reviewFile.substring(endI, endI+1).equals(" ")) {
+        word = reviewFile.substring(startI, endI);
+        word = removePunctuation(word);
+        //System.out.println(word.trim());
+        total += sentimentVal(word.trim());
         startI = endI;
-        total += sentimentVal(word);
       }
      }
-     lastWord = reviewFile.substring(startI, reviewFile.length());
-     total += sentimentVal(lastWord);
+     lastWord = reviewFile.substring(startI+1, reviewFile.length());
+     word = removePunctuation(word);
+     total += sentimentVal(lastWord.trim());
 
      return total;
+    }
+
+    public static int starRating(String fileName) {
+      double raw = totalSentiment(fileName);
+      int star;
+      if (raw < 0) {
+        star = 1;
+      } else if (raw < 5) {
+        star = 2;
+      } else if (raw < 10) {
+        star = 3;
+      } else if (raw < 15) {
+        star = 4;
+      } else {
+        star = 5;
+      }
+
+      return star;
+      }
+
+
+
+
+    public static void main(String[] args) {
+      System.out.println( totalSentiment("SimpleReview.txt"));
+      System.out.println( starRating("SimpleReview.txt"));
+
+      System.out.println( totalSentiment("OrangeReview.txt"));
+      System.out.println( starRating("OrangeReview.txt"));
+
     }
 
 }//end of class
