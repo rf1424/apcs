@@ -1,3 +1,5 @@
+
+
 public boolean array6(int[] nums, int index) {
   if (index > nums.length-1) {
     return false;
