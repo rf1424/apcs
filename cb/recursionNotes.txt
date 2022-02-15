@@ -1,0 +1,8 @@
+Team KitKats: Rin Fukuoka (Tape), John Gupta-She (Po)
+APCS
+HW64 -- Revisitation
+2022-02-14
+time spent: 1.2
+
+- Recursion requires a lot of care to not overlap/undercount cases.
+- The substring method of the String class is very useful for recursion on strings.
