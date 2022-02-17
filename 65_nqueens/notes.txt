@@ -1,0 +1,11 @@
+//Team stingRAY (Rin Furuoka, Abdullah Faruque, Yuki Feng)
+//APCS pd8
+//HW65: How Many Queens Can a Thinker Place, If a Thinker Can Place Queens...
+//2022-02-16
+//time spent: 2 hrs
+
+disco - This was very hard to wrap our heads around. With some help with fellow TDC, we realized that the helper function was going to do most of the work. the comments inside of
+solveH basically explain the process. 
+there is a solution for 1x1 and anything  including 4x4 and higher. 
+
+qcc - can this be done with out recursion? 
