@@ -1,8 +1,8 @@
-// Clyde Sinclair
-// APCS pd0
-// HW68 -- recursively probing for a closed cycle
-// 2022-02-28m
-// time spent:  hrs
+//Team stingRAY (Rin Furuoka, Abdullah Faruque, Yuki Feng)
+//APCS pd8
+//HW68: ...and T-, Tr-, Tri-, Tries Again Until It's Done
+//2022-03-01
+//time spent: 1 hrs
 
 /***
  * SKELETON
@@ -15,14 +15,30 @@
  * $ java KnightTour [N]
  *
  * ALGO
+ * Given a n*n square board, start by placing a knight on (1, 1).
+ * Continue placing a chain of knights and keeping track of the number of moves.
+ * When the number of moves equals the number of squares, stop. You found a working knight’s tour.
+ * Else when the current knight does not have any move, stop.
+ * Remove the current knight and try the alternate configurations.
  *
- * DISCO
+ * If after trying all the configurations starting with a knight on (1,1),
+ * there is no working knight’s tour, restart by placing a knight on a different square.
+ * After you restart from all possible starting squares to place the knight,
+ * and there is no working knight’s tour, then there is no solution. 
  *
- * QCC
+ * DISCO - n = 7 and 8 took too long to run.
+ *
+ * QCC- when we ran the time code, my results are shown as below. Which time are we supposed to use to make judgements?
  *
  * Mean execution times for boards of size n*n:
- * n=5   __s    across __ executions
- * n=6   __s    across __ executions
+ * n=5   __s    across 5 executions
+ * real    0m0.933s
+ * user    0m0.015s
+ * sys     0m0.031s
+ * n=6   __s    across 1 executions
+ * real    33m43.345s
+ * user    0m0.000s
+ * sys     0m0.031s
  * n=7   __s    across __ executions
  * n=8   __s    across __ executions
  *
