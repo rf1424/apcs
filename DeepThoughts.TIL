@@ -1,0 +1,42 @@
+Double Johns: John Gupta-she, Ziying Jian, Rin Fukuoka
+APCS
+HW69 -- Making Sure
+2022-03-02
+time spent: 1.5
+
+Knight’s Tour execution time measurements
+5 x 5: 0.155s
+6 x 6: 0.415s
+7 x 7: 2:18.7s
+8 x 8: too long
+
+q0: From any starting position, can an open tour always be found? Explain.
+An open tour cannot be always found. For instance, on a 5x5 board, if the
+starting position is (0, 3), there is no possible solution.
+
+q1: Same, but for closed tour.
+No, for the same example (and many others, such as n=2,3,4), there are no solutions at all,
+meaning no closed tour either. If any closed tour does exist, however,
+there is a closed tour from every starting position, as you can start from that position to begin with.
+
+q2: How do you explain the increase in execution time as n increases?
+You must place a total of n^2 knights. Each knight requires 8 checks,
+barring paths that fail. This means that the O will be about O(8^(n^2)).
+As a comparison to nqueens which is O(n^n) using this same theory
+(there is a piazza post that sort of contradicts this), the knight’s tour
+execution time can be written as (8^n)^n, which grows much faster.
+
+q3: Thoughts on optimization?
+To check all starting positions, you don’t have to check all n^2 positions.
+Instead, you can check somewhere closer to (n^2)/8 positions.
+This takes advantage of a square’s symmetry: if you look at only the top left quarter-square,
+you can rotate/reflect to create all other quarter-squares. Then, if you only
+look at half of this quarter-square (split along the main diagonal), you can
+reflect this half to create the other, so you only need to check 1/8th of the total square.
+
+ALGO FOR MAZE
+- You can move up, right, down, left, as long as the square is not occupied or
+  has not been traveled to before.
+- If there is no available move, return to the previous square.
+- If you reach the end square, you are done.
+- Once all configurations are tried, and you do not reach the end square, there is no solution. 

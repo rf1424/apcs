@@ -24,7 +24,7 @@
  * If after trying all the configurations starting with a knight on (1,1),
  * there is no working knight’s tour, restart by placing a knight on a different square.
  * After you restart from all possible starting squares to place the knight,
- * and there is no working knight’s tour, then there is no solution. 
+ * and there is no working knight’s tour, then there is no solution.
  *
  * DISCO - n = 7 and 8 took too long to run.
  *
@@ -75,7 +75,7 @@ public class KnightTour
 
     //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     //for fixed starting location, use line below:
-    //tf.findTour( 2, 2, 1 );
+    tf.findTour( 2, 5, 1 );
     //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
     //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -88,11 +88,11 @@ public class KnightTour
     //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     // PUSHING FARTHER...
     // Systematically attempt to solve from every position on the board?
-    for (int i = 2; i < n+2; i++) {
-      for (int j = 2; j<n+2; j++) {
-        tf.findTour(i, j, 1);
-      }
-    }
+    // for (int i = 2; i < n+2; i++) {
+    //   for (int j = 2; j<n+2; j++) {
+    //     tf.findTour(i, j, 1);
+    //   }
+    // }
     //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
   }//end main()
@@ -199,7 +199,7 @@ class TourFinder
       //mark current cell with current move number
       _board[x][y] = moves;
 
-      System.out.println( this ); //refresh screen
+      //System.out.println( this ); //refresh screen
 
       //delay(1000); //uncomment to slow down enough to view
 
@@ -226,7 +226,7 @@ class TourFinder
       // (Overwrite number at this cell with a 0.)
         _board[x][y] = 0;
 
-      System.out.println( this ); //refresh screen
+      //System.out.println( this ); //refresh screen
     }
   }//end findTour()
 
