@@ -1,0 +1,10 @@
+/*
+ Team Fred (Andrey Sokolov + Geese, Rin Fukuoka + Tape, Kartik Vanjani + Krish)
+ APCS PD8
+ HW 80: Find and Replace
+ 2022-03-24
+*/
+DISCO
+
+QCC
+- Why don't you insert <T> for constructors? 
