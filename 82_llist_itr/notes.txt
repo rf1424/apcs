@@ -1,0 +1,14 @@
+Team Fred (Andrey Sokolov + Geese, Rin Fukuoka + Tape, Kartik Vanjani + Krish)
+ APCS PD8
+ HW 82: Roll Your Own Iterator
+ 2022-03-25
+ Spent: 0.5 hrs
+
+
+DISCO
+ - It's cool how implementing Iterable functionality allows us to a foreach loop
+ - Private class usage is pretty cool! I wonder how many private classes you can have in one file.
+
+QCC
+ - How come using a foreach loop on a linkedlist doesn't let you see the last element of the list?
+ - Trying to use .iterator() outside of the LList class doesn't seem to be possible. Why is that?
