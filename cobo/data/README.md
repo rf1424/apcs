@@ -19,6 +19,27 @@ https://berry-cs.github.io/sinbad/install-java
 ~~~~~~~~~~~~~~~~~
 Q/As
 
+data sets:
+
+§ http://www.kaggle.com
+§ http://www.data.gov
+§ https://toolbox.google.com/datasetsearch
+
+
+To make a JAR available to runtime environment (JRE)...
+
+```
+$ javac -classpath .:path/to/sinbad.jar -d . Driver.java
+$ java -classpath .:path/tosinbad.jar Driver
+```
+
+411 on sinbad
+https://berry-cs.github.io/sinbad/install-java
+
+
+~~~~~~~~~~~~~~~~~
+Q/As
+
 Activity 1.
   1.  We use Google classroom, GitHub, the Stuy APCS page, and
       YouTube.
@@ -33,7 +54,7 @@ Activity 1.
   5.  Pokemon and Music
   6.  Who is the most popular pokemon character? (its n)
       What was the most popular rock band in the 90s?
-  7.  Reddit pollsw
+  7.  Reddit polls
   8.  MANY REDDIT POLLS. One advantage of having more data is that the larger data is
       less swung by outliers.
   9.  With services like Spotify, the songs that some individuals listen
