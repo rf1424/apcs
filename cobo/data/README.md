@@ -1,43 +1,4 @@
-data sets:
 
-§ http://www.kaggle.com
-§ http://www.data.gov
-§ https://toolbox.google.com/datasetsearch
-
-
-To make a JAR available to runtime environment (JRE)...
-
-```
-$ javac -classpath .:path/to/sinbad.jar -d . Driver.java
-$ java -classpath .:path/tosinbad.jar Driver
-```
-
-411 on sinbad
-https://berry-cs.github.io/sinbad/install-java
-
-
-~~~~~~~~~~~~~~~~~
-Q/As
-
-data sets:
-
-§ http://www.kaggle.com
-§ http://www.data.gov
-§ https://toolbox.google.com/datasetsearch
-
-
-To make a JAR available to runtime environment (JRE)...
-
-```
-$ javac -classpath .:path/to/sinbad.jar -d . Driver.java
-$ java -classpath .:path/tosinbad.jar Driver
-```
-
-411 on sinbad
-https://berry-cs.github.io/sinbad/install-java
-
-
-~~~~~~~~~~~~~~~~~
 Q/As
 
 Activity 1.
@@ -54,9 +15,10 @@ Activity 1.
   5.  Pokemon and Music
   6.  Who is the most popular pokemon character? (its n)
       What was the most popular rock band in the 90s?
-  7.  Reddit polls
-  8.  MANY REDDIT POLLS. One advantage of having more data is that the larger data is
-      less swung by outliers.
+  7.  (Reddit) polls, or data that reflects opinions submitted by a large
+      group.
+  8.  MANY REDDIT POLLS. One advantage of having more data is that    
+      the larger data is less swung by outliers.
   9.  With services like Spotify, the songs that some individuals listen
       to can help the site recognize what artists/genres are similar and
       base recommendations to others on that info. So, having more users
@@ -80,7 +42,7 @@ Activity 2.
   9.  Which cereal is ranked the highest? (there are no comparison methods).
   10. Add a method that will compare each variable for two instances of Cereal.
 
-  Activity 3.
+Activity 3.
   1.  The temperature at Atlanta, Hartsfield - Jackson Atlanta International
       Airport, GA is 65.0F.
   2.  Code: KALB
@@ -88,6 +50,28 @@ Activity 2.
   4.  47
   5.  You can filter stations by longitude.
   6.  NSTU: Pago Pago, AS, Samoa.
-  7.  We can filter based on longitude. We could answer if longitude is
-      related to temperature.
-  8.  It would basically be the same as with latitude.
+  7.  We can use this code to determine the Southmost station in a state.
+  8.  It would not require much more code, it would just run both filters
+      at once.
+
+Activity 4.
+  1.  What day had the highest increase in COVID cases in Poland?
+  2.  We had searched the database for statistics on COVID cases across the
+      world, and we had used a selected portion of it to compare statistics for
+      POLSKA.
+  3.  We planned out a Stat class that would organize each row of data into
+      an instance, which we could then use to compare data points.
+  4.  Our class is called Stat, and it contains an instance variable for each
+      column that was in the original data table (ex. number recovered).
+  5.  public CovidCases() throws Exception{
+        Scanner s = new Scanner(new File("CovidData.csv"));
+
+        while (s.hasNext()) {
+          Stat nxt = new Stat(s.next());
+          stats.add(nxt);
+        }
+      }
+
+      the constructor of the CovidCases class will add each new instance
+      of Stat into an ArrayList called stats. It takes the next row from
+      the file, which is the format that the constructor of Stat accepts.
