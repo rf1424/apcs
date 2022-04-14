@@ -1,14 +1,23 @@
 // Team FRED - Andrey Sokolov + Geese & Rin Fukuoka + Tape, Kartik Vanjani + Krish
 // APCS pd8
-// HW90 - KAchoo Deque
-// 2022-04-12
-// time spent: 0.5
+// HW90/91 - KAchoo Deque
+// 2022-04-12/13
+// time spent: 0.5 hrs(04/12) + 0.5 hrs(04/13)
 
 DISCO
+  04/12
   - According to the Oracle, the toString() method is inherited from java.util.AbstractCollection
   - Mr. K's students' drivers are really useful for making sure our implementation is correct!
+  04/13
+  - Thank god for the fact LinkedLists implements all of Deques methods
+  - ArrayDeques are a thing, but we've decided not to touch them
 
 QCC
+  04/12
   - Given how LinkedList implements all of Deque's methods, were we supposed to implement all of Deque's methods?
   - Are we supposed to use LinkedList's methods to trivialize the implementation of deque?
   - How bad is writing a Deque implementation using an ArrayList?
+  04/13
+  - How large should our MRKPirateBae tester be?
+  - Much like yesterday, were we supposed to implement all of the official Deque's methods?
+  - Who is QQKachoo??
