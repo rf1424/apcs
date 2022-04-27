@@ -2,7 +2,15 @@ Rin-Sensei: Rin Fukuoka, Julia Kozak, John Gupta-She
 APCS
 L09
 2022-04-06
-time spent:
+time spent: 3 hours
+
+DISCO
+- GUI should be separated from the logic of the code as much as possible
+- Prioritize functionality before visuals/GUI
+
+QCC
+- How can we potentially incorporate time into the game?
+
 
 Activity 1
 1. We would have a "CelebrityGame" class to keep track of all the information in
@@ -50,7 +58,7 @@ and it handles the list of Celebrities.
 13. It can access the clue and answer from the current celebrity object.
 
 Activity 4
-1. Attributes:
-   Behavior:
-   Type:
-   Return type:
+17. it says it before it @override
+18. use the method of the superclass by using super.<methodname>(<arguments>)
+19. extends
+20. it typecasts it so it can be added to the arraylist

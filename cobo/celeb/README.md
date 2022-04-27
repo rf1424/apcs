@@ -17,8 +17,7 @@ time spent:
 - ~~Adding celebs~~
 - ~~Processing guess~~
 - Modifying for multiple subclasses
-  - ~~Think of a subclass~~
-  - ~~Modify add~~
-  - ~~Modify validate~~
-- Work on GUI
+  - Think of a subclass
+  - Modify add
+  - Modify validate
 - Open ended activity? if time?
