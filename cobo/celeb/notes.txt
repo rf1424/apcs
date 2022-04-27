@@ -1,0 +1,56 @@
+Rin-Sensei: Rin Fukuoka, Julia Kozak, John Gupta-She
+APCS
+L09
+2022-04-06
+time spent:
+
+Activity 1
+1. We would have a "CelebrityGame" class to keep track of all the information in
+the game. We would also have a "Celebrity" class for each celebrity and another
+class to handle the GUI.
+
+2. We need a list of celebrities in the "hat", and a clue for each celebrity. We also
+need players and a scoreboard.
+
+3. The game class must let players guess, tally the scoreboard, and choose/remove
+celebrities from the hat.
+
+4. We can create a guess() method, play() method, and choose and remove from hat methods.
+
+5. choose(), print clue(), guess(), tally the score, remove()
+
+6/7. Oranges.
+Information: color, sourness
+Behavior: grow, roll, rot, beEaten
+
+
+Activity 2
+1. It is meant to initialize instance variables and set up the instance of the
+class to run the game.
+2. It looks like public <className>(), and can take parameters that may be used
+to assign instance variable values.
+3. We need an instance variable for the celebrity name and clues to guess the name.
+4. It should include a method to take a guess, check if the guess is valid, check
+if the guess matches the answer, and reveal a clue.
+7. It has a single overloaded constructor that takes inputs for the answer and
+clues. We could also include a constructor public Celebrity(String answer) that
+would take only the name parameter and set a default clue.
+public Celebrity (String answer) {
+  this.answer = answer;
+  this.clue = "no clues for you";
+}
+
+
+Activity 3
+1.
+2. private ArrayList<Celebrity> celebGameList;
+3. private Celebrity gameCelebrity; //also private
+12. the CelebrityGame class contains all the methods that the GUI works with,
+and it handles the list of Celebrities.
+13. It can access the clue and answer from the current celebrity object.
+
+Activity 4
+1. Attributes:
+   Behavior:
+   Type:
+   Return type:
