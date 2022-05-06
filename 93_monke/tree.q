@@ -49,24 +49,18 @@ What must be true of perfect trees but not others?
 C'EST POSSIBLE?
 ------------------------------------------------
 < your explanation of whether the tree reconstruction challenge given in class is achievable or not >
-EGDKINLOW in pre-order:
 
-    E
-   /  \
-  G    I
- / \  / \
-D  K N   L
-        / \
-       O   W
-
-EKDNIOLWG in in-order:
-
-       O
-      /  \
-     N    W
-    / \  / \
-   K  I L   G
-  / \
- E   D
-
+EGDKINLOW in pre-order and in-order:
+   E
+    \
+    G
+   /
+  D
+ / \
+K   I
+   / \
+  N    L
+      / \
+     O   W
+     
 ================================================
