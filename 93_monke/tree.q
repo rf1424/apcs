@@ -50,7 +50,8 @@ C'EST POSSIBLE?
 ------------------------------------------------
 < your explanation of whether the tree reconstruction challenge given in class is achievable or not >
 
-EGDKINLOW in pre-order and in-order:
+EGDKINLOW in pre-order and
+EKDNIOLWG in in-order:
    E
     \
     G
@@ -62,5 +63,5 @@ K   I
   N    L
       / \
      O   W
-     
+
 ================================================
