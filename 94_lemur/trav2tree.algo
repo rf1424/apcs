@@ -44,7 +44,7 @@ Q: What does "1-to-1" mean?
 A: For a traversal, there is a unique tree and visa versa.
 
 Q: What does "onto" mean?
-A: 
+A: Every traversal has at least one tree. 
 
 ================================================
 
