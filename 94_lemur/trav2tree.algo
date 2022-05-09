@@ -44,12 +44,12 @@ Q: What does "1-to-1" mean?
 A: For a traversal, there is a unique tree and visa versa.
 
 Q: What does "onto" mean?
-A:
+A: 
 
 ================================================
 
 
-ALGO for pre-order and in-order traversals
+ALGO for tree reconstructions
 ------------------------------------------------
 givens:
 - pre-order traversal
@@ -65,3 +65,18 @@ procedure:
    Repeat steps 1 and 2 using this "temporary root".
 4. Stop when you reach the end of the pre-order traversal.
 ================================================
+givens:
+- post-order traversal
+- in-order traversal
+
+procedure: 
+0. The last element of the post-order traversal is the root of the tree.
+1. All elements to the left of this element in the in-order traversal should
+  exist in the left subtree of this root.
+2. Similarly, all elements to the right of this element in the in-order traversal
+  should exist in the right subtree of this root.
+3. Let the next last element in the post-order traversal be the "temporary root".
+   Repeat steps 1 and 2 using this "temporary root".
+4. Stop when you reach the end of the pre-order traversal.
+================================================
+
