@@ -1,0 +1,67 @@
+// Team Rin-Sensei: Julia Kozak(Flopsy), Rin Fukuoka(Tape), John Gupta-She(Po)
+// APCS pd08
+// HW94 -- reverse engineering
+// 2022-05-08r
+// time spent: 0.5 hrs
+
+
+DISCO
+------------------------------------------------
+* Recursion kicks in
+================================================
+
+
+QCC
+------------------------------------------------
+* How do you deal with cases when there is no possible tree construction for
+  the given traversals?
+* Which tree construction should be chosen when there are multiple choices?
+  Ex. Left justified?
+================================================
+
+
+HOW KEEN ARE YOUR POWERS OF OBSERVATION?
+------------------------------------------------
+Q: For a given binary tree, how many unique pre-order traversals are there?
+A: There is exactly one traversal.
+
+Q: For a given binary tree, how many unique in-order traversals are there?
+A: There is exactly one traversal.
+
+Q: For a given binary tree, how many unique post-order traversals are there?
+A: There is exactly one traversal.
+
+Q: For a given traversal, how many unique trees could have produced it?
+A: It depends on the given traversal.
+
+Q: Given a pre-order traversal, what can you infer about its tree?
+A: The first letter of the traversal is the root.
+
+Q: Given a post-order traversal, what can you infer about its tree?
+A: The last letter of the traversal is the root.
+
+Q: What does "1-to-1" mean?
+A: For a traversal, there is a unique tree and visa versa.
+
+Q: What does "onto" mean?
+A:
+
+================================================
+
+
+ALGO for pre-order and in-order traversals
+------------------------------------------------
+givens:
+- pre-order traversal
+- in-order traversal
+
+procedure:
+0. The first element of the pre-order traversal is the root of the tree.
+1. All elements to the left of this element in the in-order traversal should
+  exist in the left subtree of this root.
+2. Similarly, all elements to the right of this element in the in-order traversal
+  should exist in the right subtree of this root.
+3. Let the next element in the pre-order traversal be the "temporary root".
+   Repeat steps 1 and 2 using this "temporary root".
+4. Stop when you reach the end of the pre-order traversal.
+================================================
