@@ -74,6 +74,7 @@ public class BST
   public void remove(int num) {
     TreeNode remNum = search(num);
     if (remNum == null) { //exist?
+      System.out.println("running!");
       return;
     } else {
       _root = remove(num, _root);
@@ -81,13 +82,14 @@ public class BST
   }
 
   public TreeNode remove(int num, TreeNode tn) {
+    //System.out.println("running!");
     if (num < tn.getValue()) {
       tn.setLeft(remove(num, tn.getLeft()));
     }
     else if (num > tn.getValue()) {
       tn.setRight(remove(num, tn.getRight()));
     }
-    else {
+    else { //found
       if(tn.getLeft() == null && tn.getRight() == null) { //no children
           return null;
       }
@@ -103,7 +105,9 @@ public class BST
           temp = temp.getRight();
         }
         tn.setValue(temp.getValue());
-        tn.setRight(remove(tn.getValue(), tn.getRight()));
+        //temp.set(temp.getLeft());
+        System.out.println("removed!");
+        tn.setLeft(remove(tn.getValue(), tn.getLeft()));
       }
     }
 
@@ -277,8 +281,8 @@ public class BST
       System.out.println("Tree: ");
   	  arbol.inOrderTrav();
 
-    	arbol.remove(6);
-    	System.out.println("\nRemoved 6:");
+    	arbol.remove(2);
+    	System.out.println("\nRemoved 2:");
       arbol.inOrderTrav();
   }
 
