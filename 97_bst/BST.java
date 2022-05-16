@@ -82,7 +82,7 @@ public class BST
   }
 
   public TreeNode remove(int num, TreeNode tn) {
-    //System.out.println("running!");
+    System.out.println("running!");
     if (num < tn.getValue()) {
       tn.setLeft(remove(num, tn.getLeft()));
     }
@@ -106,7 +106,6 @@ public class BST
         }
         tn.setValue(temp.getValue());
         //temp.set(temp.getLeft());
-        System.out.println("removed!");
         tn.setLeft(remove(tn.getValue(), tn.getLeft()));
       }
     }
@@ -274,6 +273,7 @@ public class BST
 
       //test new methods
       System.out.println("search for 2: " + arbol.search(2));
+      System.out.println("search for 6: " + arbol.search(2));
       System.out.println("search for 100: " + arbol.search(100)); //null
       System.out.println("num of leaves: " + arbol.numLeaves()); //3
       System.out.println("height: " + arbol.height()); //3
@@ -283,6 +283,10 @@ public class BST
 
     	arbol.remove(2);
     	System.out.println("\nRemoved 2:");
+      arbol.inOrderTrav();
+
+      arbol.remove(6);
+    	System.out.println("\nRemoved 6:");
       arbol.inOrderTrav();
   }
 

@@ -1,0 +1,14 @@
+
+Rin-Sensei: Julia Kozak, Rin Fukuoka, John Gupta-She
+APCS pd08
+HW99 -- Some Are More Equal Than Others, Codified
+2022-05-16
+time spent: 0.7 hrs
+
+DISCO:
+- You can consider priority at either dequeue or enqueue, but if enqueue is O(1),
+  then peekMin and removeMin are both O(n).
+- An array for each element can store priority with value.
+
+QCC:
+- Should the queue store ints, or be generically typed?
